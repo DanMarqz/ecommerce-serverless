@@ -6,6 +6,10 @@ body{
   @apply bg-gray-500 text-white;
 }
 
+button{
+  margin: 0 16px 0 16px;
+}
+
 .card{
   @apply bg-gray-900 shadow-md text-gray-100;
 }

@@ -23,7 +23,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Lovely Store",
-    url: "https://lovelyfake-store.netlify.app",
+    url: "https://lovelyfakestore.gatsbyjs.io/",
     description: "Buy in Lovely Store a Fake Store made with Gatsby"
   }
 }

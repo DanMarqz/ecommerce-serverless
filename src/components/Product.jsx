@@ -1,6 +1,7 @@
 import React from 'react';
 import Price from './Price';
 import CheckoutTemp from './CheckoutTemp';
+import BackButton from './BackButton';
 
 const Product = ({ product, prices }) => {
   const price = prices[0];
@@ -8,11 +9,11 @@ const Product = ({ product, prices }) => {
     <article className="card">
       <header className="bg-gray-900 p-6 text-center">
         <div className="flex text-left">
-
+          
           <div className="flex-1">
             {
-              (price && price.product.images) &&
-              <img src={price.product.images} alt="Product" width="500px" />
+              ( price && price.product.images ) &&
+              <img src={price.product.images} alt="Product" width="500px"/>
             }
           </div>
 
@@ -26,8 +27,11 @@ const Product = ({ product, prices }) => {
 
       <div className="text-center p-6 bg-gray-700">
         <h1 className="text-3xl mb-4 uppercase">{price.product.name}</h1>
+        <BackButton/> 
         <CheckoutTemp price={price} />
       </div>
+      
+
     </article>
   )
 }

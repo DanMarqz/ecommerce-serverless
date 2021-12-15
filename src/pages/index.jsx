@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const index = (props) => {
   return (
     <Layout>
-      <h1>Hola Mundo</h1>
+      <h1>Under Construction</h1>
     </Layout>
   )
 }

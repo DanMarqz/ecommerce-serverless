@@ -1,12 +1,13 @@
 import React from 'react';
-import Product from './Product';
+import { Link } from 'gatsby';
 
 const ProductCard = ({product}) => {
   return (
     <article className="card p-4">
       <header>
-        <h2 className="font-bold text-2xl">{ product.name }</h2>
-        <img src={product.images} alt="Product" width="500px"/>
+        <h2 className="text-2xl">
+          <Link to={`/products/${product.slug}`}>{product.name} ❯ </Link> 
+        </h2>
       </header>
     </article>
   )
