@@ -8,7 +8,7 @@ const Product = ({ product, prices }) => {
 
     <div>
       {
-        products.map((product) => (
+        products.map((product, prices) => (
           <article className="card">
             <header className="bg-gray-900 p-6 text-center">
               <div className="flex text-left">
