@@ -7,7 +7,6 @@ const products = (props) => {
   const products = props.data.allStripeProduct.nodes; 
   return (
     <Layout>
-      {/* <Products products={products} /> */}
       <Product products={products, prices} /> 
     </Layout>
   )
