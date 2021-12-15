@@ -6,7 +6,7 @@ const Products = ({ products }) => {
     <div>
       {
         products.map( (product)=> (
-          <ProductCard product={product} key={product.id}>{ product.name }</ProductCard>
+          <ProductCard product={product} key={product.id}>{ product.name, product.images }</ProductCard>
         ))
       }
     </div>
