@@ -9,6 +9,10 @@ const navItems = [
   {
     caption: 'Products',
     href: '/products'
+  },
+  {
+    caption: 'Cards',
+    href: '/cards'
   }
 ]
 

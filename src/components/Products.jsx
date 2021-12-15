@@ -1,12 +1,13 @@
 import React from 'react';
-import ProductCard from './ProductCard';
+// import ProductCard from './ProductCard';
+import Product from './Product';
 
 const Products = ({ products }) => {
   return (
     <div>
       {
         products.map( (product)=> (
-          <ProductCard product={product} key={product.id}>{ product.name, product.images }</ProductCard>
+          <Product product={product} key={product.id}>{ product.name, product.images }</Product>
         ))
       }
     </div>
